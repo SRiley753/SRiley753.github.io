@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture the Flag Game</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Capture the Flag Game</h1>
+        <div class="question-section">
+            <h2><%= question.questionText %></h2>
+            <form action="/check-answer" method="POST">
+                <input type="hidden" name="questionId" value="<%= question.id %>">
+                <input type="text" name="answer" placeholder="Your answer" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <% if (clue) { %>
+            <div class="clue-section">
+                <h3>Clue:</h3>
+                <p><%= clue %></p>
+            </div>
+        <% } %>
+    </div>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

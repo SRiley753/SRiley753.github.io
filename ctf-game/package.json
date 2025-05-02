@@ -1,0 +1,23 @@
+{
+  "name": "ctf-game",
+  "version": "1.0.0",
+  "description": "A capture the flag style game where players answer questions to receive clues.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "^3.1.6"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "capture",
+    "the",
+    "flag",
+    "game"
+  ],
+  "author": "",
+  "license": "ISC"
+}
