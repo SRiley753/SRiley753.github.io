@@ -1,18 +1,18 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        answer: "paris",
-        clue: "It's known as the City of Light."
+        question: "What dataset holds information specifically for XDR events?",
+        answer: "xdr_data",
+        clue: "It's in the name."
     },
     {
-        question: "What is 2 + 2?",
-        answer: "4",
-        clue: "It's the first even prime number."
+        question: "What field is used to filter for a host in XDR datasets?",
+        answer: "agent_hostname",
+        clue: "Find a host in the dataset from the previous question."
     },
     {
-        question: "What is the largest planet in our solar system?",
-        answer: "jupiter",
-        clue: "It's named after the king of the Roman gods."
+        question: "How many results for the hostname C91001A120CD4F on 4/30/2025?",
+        answer: "484699",
+        clue: "Don't use a comma."
     }
 ];
 
