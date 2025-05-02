@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture the Flag Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Capture the Flag</h1>
+        <p>Answer the questions to receive clues and progress through the game!</p>
+    </header>
+    <main>
+        <!-- New section for entering the user's name -->
+        <section id="name-section">
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username" placeholder="Your name" />
+            <button id="start-game">Start Game</button>
+        </section>
+
+        <!-- Existing question section -->
+        <section id="question-section" style="display: none;">
+            <div id="question">Question will appear here</div>
+            <input type="text" id="answer" placeholder="Enter your answer" />
+            <button id="submit">Submit</button>
+        </section>
+
+        <section id="clue-section" style="display: none;">
+            <h3>Clue:</h3>
+            <p id="clue">Clue will appear here after answering correctly.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Capture the Flag Game</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
